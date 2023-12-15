@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Changelog &mdash; earthdaily 0.0.3 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sg_gallery-rendered-html.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Contributing" href="CONTRIBUTING.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> earthdaily
+          </a>
+              <div class="version">
+                0.0.3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">earthdaily documentation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples gallery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_auto_examples/index.html">Gallery</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="earthdaily.html">earthdaily package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">[0.0.3] - 2023-12-15</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">[0.0.2] - 2023-12-15</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">[0.0.1] - 2023-12-15</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc9-2023-12-12">[0.0.1-rc9] - 2023-12-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc8-2023-07-12">[0.0.1-rc8] - 2023-07-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc7-2023-11-22">[0.0.1-rc7] - 2023-11-22</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc6-2023-11-10">[0.0.1-rc6] - 2023-11-10</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc5-2023-11-10">[0.0.1-rc5] - 2023-11-10</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc4-2023-10-19">[0.0.1-rc4] 2023-10-19</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc3-2023-10-18">[0.0.1-rc3] 2023-10-18</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc2-2023-10-12">[0.0.1-rc2] 2023-10-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rc1-2023-10-12">[0.0.1-rc1] 2023-10-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#beta-2023-09-20">[0.0.1-beta] 2023-09-20</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Added</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">earthdaily</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Changelog</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/CHANGELOG.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this heading"></a></h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a class="reference external" href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+and this project adheres to <a class="reference external" href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<section id="id1">
+<h2>[0.0.3] - 2023-12-15<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<section id="added">
+<h3>Added<a class="headerlink" href="#added" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Only query assets directly avaible in the search items (better performance).</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>[0.0.2] - 2023-12-15<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<section id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Missing json due to pypi installation.</p></li>
+<li><p>Multisensors datacube now support <code class="docutils literal notranslate"><span class="pre">stackstac</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<section id="id3">
+<h2>[0.0.1] - 2023-12-15<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<section id="id4">
+<h3>Added<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Auth datacube <code class="docutils literal notranslate"><span class="pre">earthdaily.earthdatastore.Auth().datacube(...)</span></code> function now manages multiple collections.</p></li>
+<li><p>Uses <code class="docutils literal notranslate"><span class="pre">fields</span></code> to query only assets asked over Skyfox/EDS (better performance).</p></li>
+</ul>
+</section>
+<section id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">asset_mapper</span></code> has now all assets from available collections.</p></li>
+</ul>
+</section>
+</section>
+<section id="rc9-2023-12-12">
+<h2>[0.0.1-rc9] - 2023-12-12<a class="headerlink" href="#rc9-2023-12-12" title="Permalink to this heading"></a></h2>
+<section id="id5">
+<h3>Added<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Optimization (dask-native) for cloudmasks (Sentinel-2, Venus, ag-cloud-mask), except Landsat.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>Changed<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Default chunks using odc is now <code class="docutils literal notranslate"><span class="pre">x=&quot;auto&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">y=&quot;auto&quot;</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">geobox</span></code> or <code class="docutils literal notranslate"><span class="pre">geopolygon</span></code> is used to have a preclipped datacube to the bounding box of the geometry. It enhances performances.</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>Fixed<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Load json config for <code class="docutils literal notranslate"><span class="pre">Auth</span></code>.</p></li>
+<li><p>Remove kwargs of <code class="docutils literal notranslate"><span class="pre">geobox</span></code> for native cloudmask in order to parse new <code class="docutils literal notranslate"><span class="pre">geobox</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<section id="rc8-2023-07-12">
+<h2>[0.0.1-rc8] - 2023-07-12<a class="headerlink" href="#rc8-2023-07-12" title="Permalink to this heading"></a></h2>
+<section id="id8">
+<h3>Added<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Tests for python 3.12.</p></li>
+<li><p>handle cross calibration (harmonization) using private collection.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Auth</span></code> automatically to EarhtDataStore after 3600 seconds.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Auth</span></code> now supports presign_urls parameter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">load_pivot_corumba</span></code> in datasets.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>Fixed<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Perfect dimension compatibility between cloudmask and sensor datacube using <code class="docutils literal notranslate"><span class="pre">geobox</span></code>.</p></li>
+<li><p>Force loading native landsat cloudmask because not compatible with dask.</p></li>
+</ul>
+</section>
+</section>
+<section id="rc7-2023-11-22">
+<h2>[0.0.1-rc7] - 2023-11-22<a class="headerlink" href="#rc7-2023-11-22" title="Permalink to this heading"></a></h2>
+<section id="id10">
+<h3>Fixed<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>issue with unlogged datacube and non-geodataframe intersects.</p></li>
+<li><p>for element84 sentinel-2-l2a collection, <code class="docutils literal notranslate"><span class="pre">boa_offset_applied</span></code>is set to True since 2022-02-28.</p></li>
+<li><p>added <code class="docutils literal notranslate"><span class="pre">nir</span></code> band in <code class="docutils literal notranslate"><span class="pre">boa_offset_applied</span></code> control.</p></li>
+<li><p>fix percentage in landsat agriculture cloudmask .</p></li>
+</ul>
+</section>
+</section>
+<section id="rc6-2023-11-10">
+<h2>[0.0.1-rc6] - 2023-11-10<a class="headerlink" href="#rc6-2023-11-10" title="Permalink to this heading"></a></h2>
+<section id="id11">
+<h3>Fixed<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>fix bug in <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> using gh actions.</p></li>
+</ul>
+</section>
+</section>
+<section id="rc5-2023-11-10">
+<h2>[0.0.1-rc5] - 2023-11-10<a class="headerlink" href="#rc5-2023-11-10" title="Permalink to this heading"></a></h2>
+<section id="id12">
+<h3>Added<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">intersects</span></code> argument in search/datacube now supports wkt/geojson/geopandas.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">common_band_names</span></code> default set to True in datacube creation. It uses the new Assets Mapper in order to define to best suitable bands according to user needs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">clear_cover</span></code> argument in the datacube method when using the <code class="docutils literal notranslate"><span class="pre">earthdatastore.Auth</span></code> method.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">datasets.load_pivot()</span></code> to load a GeoDataFrame of a pivot in Nebraska (alternates between corn or soy between years).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">preload_mask</span></code> in authenticated datacube method set to <code class="docutils literal notranslate"><span class="pre">True</span></code>by default to load, if enough virtual memory.</p></li>
+<li><p>Several tests to check and validate code.</p></li>
+<li><p>Better performances for cloud mask statistics by checking data type.</p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>Changed<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>masks statistics are not anymore suffixed with the cloudmask type : <code class="docutils literal notranslate"><span class="pre">clear_percent</span></code> and <code class="docutils literal notranslate"><span class="pre">clear_pixels</span></code>. Warns with a DeprecationWarning.</p></li>
+<li><p>all queries in <code class="docutils literal notranslate"><span class="pre">post_query</span></code> must return True to keep the item. If a key doesn’t exist, considers the result as False (instead of failling).</p></li>
+<li><p>default chunks are now <code class="docutils literal notranslate"><span class="pre">x=512</span></code> and <code class="docutils literal notranslate"><span class="pre">y=512</span></code> for odc-stac.</p></li>
+</ul>
+</section>
+<section id="id14">
+<h3>Fixed<a class="headerlink" href="#id14" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>search <code class="docutils literal notranslate"><span class="pre">post_query</span></code> do not block if some properties are not available on all items.</p></li>
+<li><p>some scale/offsets were not supported due to missing scale/offsets from previous assets.</p></li>
+<li><p>issues when computing datacube using Landsat cloudmask (<code class="docutils literal notranslate"><span class="pre">qa_pixel</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">intersects</span></code> now supports several geometries and don’t force selection on the first index.</p></li>
+</ul>
+</section>
+</section>
+<section id="rc4-2023-10-19">
+<h2>[0.0.1-rc4] 2023-10-19<a class="headerlink" href="#rc4-2023-10-19" title="Permalink to this heading"></a></h2>
+<section id="id15">
+<h3>Changed<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>When asking <code class="docutils literal notranslate"><span class="pre">ag_cloud_mask</span></code>, keep only sensor items that have <code class="docutils literal notranslate"><span class="pre">eda:ag_cloud_mask_available=True</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<section id="rc3-2023-10-18">
+<h2>[0.0.1-rc3] 2023-10-18<a class="headerlink" href="#rc3-2023-10-18" title="Permalink to this heading"></a></h2>
+<section id="id16">
+<h3>Added<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">earthdaily.earthdatastore.cube_utils.zonal_stats_numpy</span></code> to compute local statistics using numpy functions. Best when high number of geometries.</p></li>
+</ul>
+</section>
+<section id="id17">
+<h3>Changed<a class="headerlink" href="#id17" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">zonal_stats</span></code> default parameters rasterizes now whole vector in order to be
+really faster faster. Previous behavior is available by selecting <code class="docutils literal notranslate"><span class="pre">method=&quot;standard&quot;</span></code>.</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>Fixed<a class="headerlink" href="#id18" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Fix when number of <code class="docutils literal notranslate"><span class="pre">ag_cloud_mask</span></code> is lower than number of sensor items</p></li>
+</ul>
+</section>
+</section>
+<section id="rc2-2023-10-12">
+<h2>[0.0.1-rc2] 2023-10-12<a class="headerlink" href="#rc2-2023-10-12" title="Permalink to this heading"></a></h2>
+<section id="id19">
+<h3>Fixed<a class="headerlink" href="#id19" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">stats</span></code> name as dimension</p></li>
+</ul>
+</section>
+<section id="id20">
+<h3>Changed<a class="headerlink" href="#id20" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">zonal_stats</span></code> output “feature” (not “feature_name”) and <code class="docutils literal notranslate"><span class="pre">stats</span></code> dimensions</p></li>
+</ul>
+</section>
+</section>
+<section id="rc1-2023-10-12">
+<h2>[0.0.1-rc1] 2023-10-12<a class="headerlink" href="#rc1-2023-10-12" title="Permalink to this heading"></a></h2>
+<section id="id21">
+<h3>Added<a class="headerlink" href="#id21" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Automatic presigned url when needed, just specify argument <code class="docutils literal notranslate"><span class="pre">prefer_alternate=&quot;download&quot;</span></code> in search.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">zonal_stats</span></code> function available in <code class="docutils literal notranslate"><span class="pre">earthdatastore.cube_utils</span></code> module.</p></li>
+<li><p>An exemple on how to use <code class="docutils literal notranslate"><span class="pre">.env</span></code> credentials.</p></li>
+</ul>
+</section>
+<section id="id22">
+<h3>Changed<a class="headerlink" href="#id22" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Python version must be at least 3.10.</p></li>
+<li><p>Gdal version must be at least 3.7.0.</p></li>
+<li><p>A better documentation.</p></li>
+</ul>
+</section>
+</section>
+<section id="beta-2023-09-20">
+<h2>[0.0.1-beta] 2023-09-20<a class="headerlink" href="#beta-2023-09-20" title="Permalink to this heading"></a></h2>
+<section id="id23">
+<h3>Added<a class="headerlink" href="#id23" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>First public release under the name of earthdaily.</p></li>
+<li><p>module earthdatastore gathers all cube fonctions.</p></li>
+<li><p>earthdatastore.Auth() allows methods for search and datacube creation.</p></li>
+<li><p>Add if missing default scale/offset factor to collection (landsat-c2l2-sr, landsat-c2l2-st, landsat-c2l1).</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="CONTRIBUTING.html" class="btn btn-neutral float-left" title="Contributing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, EarthDailyAgro.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
